@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ultimatestats"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.ultimatestats.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.example.ultimatestats.TeamPage"
+            android:label="Team Listing">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.example.ultimatestats.PlayerPage"
+            android:label="Player Listing">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.example.ultimatestats.GamePage"
+            android:label="Game Listing">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.example.ultimatestats.CreateTeam"
+            android:label="Creating a Team">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.example.ultimatestats.CreateGame"
+            android:label="Creating a Game">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.example.ultimatestats.CreatePlayer"
+            android:label="Creating a Player">
+        </activity>
+        <activity
+            android:screenOrientation="landscape" 
+            android:name="com.recording.FieldPage"
+            android:label="Recording Data">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.recording.LineUpPage"
+            android:label="Set a line">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.recording.StatsPage"
+            android:label="Game History">
+        </activity>
+    </application>
+
+</manifest>

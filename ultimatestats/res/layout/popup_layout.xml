@@ -1,0 +1,89 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/popup" >
+
+    <Button
+        android:id="@+id/player1_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#FFFFFF"
+        android:text="p1" />
+
+    <Button
+        android:id="@+id/player2_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/player1_btn"
+        android:textColor="#FFFFFF"
+        android:text="p2" />
+
+    <Button
+        android:id="@+id/player3_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/player2_btn"
+        android:textColor="#FFFFFF"
+        android:text="p3" />
+
+    <Button
+        android:id="@+id/playerUnknown_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/player1_btn"
+        android:textColor="#FFFFFF"
+        android:text="Unkn" />
+
+    <Button
+        android:id="@+id/player7_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/playerUnknown_btn"
+        android:textColor="#FFFFFF"
+        android:text="p7" />
+
+    <Button
+        android:id="@+id/player6_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/player7_btn"
+        android:layout_alignBottom="@+id/player7_btn"
+        android:layout_alignLeft="@+id/player2_btn"
+        android:textColor="#FFFFFF"
+        android:text="p6" />
+
+    <Button
+        android:id="@+id/player5_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/player6_btn"
+        android:layout_toRightOf="@+id/player6_btn"
+        android:textColor="#FFFFFF"
+        android:text="p5" />
+
+    <Button
+        android:id="@+id/player4_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/playerUnknown_btn"
+        android:layout_alignBottom="@+id/playerUnknown_btn"
+        android:layout_toRightOf="@+id/player2_btn"
+        android:textColor="#FFFFFF"
+        android:text="p4" />
+    
+</RelativeLayout>

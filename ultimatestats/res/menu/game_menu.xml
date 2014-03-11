@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/start_game" android:title="Start Game"/>
+    <item android:id="@+id/export_game" android:title="Export Stats"/>
+    <item android:id="@+id/delete_game" android:title="Delete"/>
+	<item android:id="@+id/cancel_game" android:title="Cancel"/>
+</menu>

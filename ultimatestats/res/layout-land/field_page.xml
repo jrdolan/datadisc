@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E3E3"
+    android:orientation="vertical"
+    tools:context=".FieldPage"
+    android:screenOrientation="landscape"  >
+    
+    <LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="40dp"
+		    android:orientation="horizontal" 
+		    android:layout_gravity="center">
+			<!-- Top Row -->
+
+		    <Button
+		        android:id="@+id/lineup_btn"
+		        android:layout_width="100dp"
+		        android:layout_height="fill_parent"
+		        android:textSize="15sp" 
+		        android:textColor="#FFFFFF"
+		        android:text="LineUp" />
+
+			<Button
+			    android:id="@+id/startup_conditions_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    android:textSize="15sp" 
+			    android:textColor="#FFFFFF"
+			    android:text="Conditions" />
+
+			<LinearLayout
+			    android:layout_width="100dp"
+			    android:layout_height="match_parent" 
+			    android:orientation="vertical">
+
+				<TextView
+				    android:id="@+id/score"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:gravity="center"
+				    android:layout_marginTop="-2dp"
+				    android:textSize="14dp"
+				    android:text="Score" />
+				<LinearLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content" 
+				    android:orientation="horizontal">
+					<TextView
+					    android:id="@+id/main_team_score_number"
+					    android:layout_width="35dp"
+					    android:layout_height="fill_parent"
+					    android:gravity="right"
+					    android:textSize="20dp"
+					    android:textColor="#29ABDD"
+					    android:text="0"/>
+					<TextView
+					    android:id="@+id/score_dash"
+					    android:layout_width="30dp"
+					    android:layout_height="fill_parent"
+					    android:gravity="center_horizontal"
+					    android:textSize="20dp"
+					    android:text="-"/>
+					<TextView
+					    android:id="@+id/opponent_score_number"
+					    android:layout_width="35dp"
+					    android:layout_height="fill_parent"
+					    android:gravity="left"
+					    android:textSize="20dp"
+					    android:textColor="#AA330F"
+					    android:text="0" />
+					
+				</LinearLayout>
+			</LinearLayout>
+			<Button
+			    android:id="@+id/set_wind_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    android:textSize="15sp" 
+			    android:textColor="#FFFFFF"
+			    android:text="Set Wind" />
+			
+			<Button
+			    android:id="@+id/stats_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    android:textSize="15sp" 
+			    android:textColor="#FFFFFF"
+			    android:text="Stats" />
+			
+			<Button
+			    android:id="@+id/back_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    android:textSize="15sp" 
+			    android:textColor="#FFFFFF"
+			    android:text="Back" />
+			
+		</LinearLayout>
+
+ 
+	    <com.recording.DrawingView
+	        android:id="@+id/drawing"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="3dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="3dp"
+	        android:layout_weight="1"
+	        android:background="#E3E3E3" />
+    
+    <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/action_display"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:gravity="center"
+            android:text=" "
+            android:textSize="12dp" />
+
+        <!-- Bottom Row -->
+		<LinearLayout
+		    android:id="@+id/paint_colors"
+		    android:layout_width="wrap_content"
+		    android:layout_height="40dp"
+		    android:orientation="horizontal" >
+
+			<Button
+			    android:id="@+id/drop_btn"
+			    android:layout_width="75dp"
+			    android:layout_height="fill_parent"
+			    android:textSize="15sp" 
+			    android:textColor="#FFFFFF"
+			    android:text="Drop" />
+
+			<Button
+			    android:id="@+id/throwaway_btn"
+			    android:layout_width="75dp"
+			    android:layout_height="fill_parent"
+			    android:textSize="14sp" 
+			    android:textColor="#FFFFFF"
+			    android:text="T-Away" /> 
+
+			<Button
+			    android:id="@+id/stall_btn"
+			    android:layout_width="75dp"
+			    android:layout_height="fill_parent"
+			    android:textSize="15sp" 
+			    android:textColor="#FFFFFF"
+			    android:text="Stall" />
+
+			<Button
+			    android:id="@+id/out_of_bounds_btn"
+			    android:layout_width="75dp"
+			    android:layout_height="fill_parent"
+			    android:textSize="15sp" 
+			    android:textColor="#FFFFFF"
+			    android:text="OB" />
+			
+			<Button
+			    android:id="@+id/block_btn"
+			    android:layout_width="75dp"
+			    android:layout_height="fill_parent"
+			    android:textSize="15sp" 
+			    android:textColor="#FFFFFF"
+			    android:text="Block" />
+			
+			<Button
+			    android:id="@+id/goal_btn"
+			    android:layout_width="75dp"
+			    android:layout_height="fill_parent"
+			    android:textSize="15sp" 
+			    android:textColor="#FFFFFF"
+			    android:text="Goal" />
+			
+			<Button
+			    android:id="@+id/undo_btn"
+			    android:layout_width="75dp"
+			    android:layout_height="fill_parent"
+			    android:textSize="15sp" 
+			    android:textColor="#FFFFFF"
+			    android:text="Undo" />
+			
+		</LinearLayout>
+		
+	</LinearLayout>
+
+</LinearLayout>

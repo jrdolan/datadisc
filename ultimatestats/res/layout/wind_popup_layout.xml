@@ -1,0 +1,294 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wind_popup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#EEFFFFFF" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_marginLeft="50dp" >
+
+	    
+	    <TextView
+	        android:id="@+id/wind_strength_TextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="30dp"
+	        android:gravity="center_vertical"
+	        android:text="Wind Strength"
+	        android:textSize="16sp"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    <TextView
+	        android:id="@+id/wind_strength_value"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:text="From API" />
+	
+	    <TextView
+	        android:id="@+id/gust_strength_TextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:gravity="center_vertical"
+	        android:text="Gust Strength"
+	        android:textSize="16sp"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    <TextView
+	        android:id="@+id/gust_value"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:text="From API" />
+		
+		<TextView
+	        android:id="@+id/temperature_TextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:text="Temperature"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:layout_marginTop="10dp"
+	        android:textSize="16sp" />
+	
+	    <TextView
+	        android:id="@+id/temperature_value"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:text="From API" />
+	
+	    <TextView
+	        android:id="@+id/weather_TextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:text="Weather"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:layout_marginTop="10dp"
+	        android:textSize="16sp" />
+	
+	    <TextView
+	        android:id="@+id/weather_value"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:text="From API" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+	    <TextView
+	        android:id="@+id/wind_direction_TextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/textView1"
+	        android:layout_toRightOf="@+id/textView1"
+	        android:gravity="center_vertical"
+	        android:text="Set Wind Direction"
+	        android:layout_marginTop="30dp"
+	        android:layout_marginLeft="50dp"
+	        android:textSize="16sp"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    <EditText
+	        android:id="@+id/wind_direction_text"
+	        android:layout_width="70dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/textView2"
+	        android:layout_alignRight="@+id/textView2"
+	        android:layout_below="@+id/textView2"
+	        android:layout_marginLeft="50dp"
+	        android:layout_marginTop="10dp"
+	        android:ems="10"
+	        android:hint="0-359 degrees"
+	        android:inputType="number"
+	        android:text="0" />
+	
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/TextView02"
+	        android:layout_below="@+id/TextView02"
+	        android:layout_marginTop="10dp"
+	        android:layout_toRightOf="@+id/textView1"
+	        android:layout_marginLeft="50dp"
+	        android:textSize="10sp"
+	        android:text="Facing the field, 0 degrees is to the right " />
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal">
+		    
+		    <Button
+		        android:id="@+id/save_wind_btn"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginTop="35dp"
+		        android:textSize="16sp" 
+		        android:textColor="#FFFFFF"
+		        android:text="Update" />
+		    
+		    <Button
+		        android:id="@+id/close_btn"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginTop="35dp"
+		        android:textSize="16sp" 
+		        android:textColor="#FFFFFF"
+		        android:text="Cancel" />
+		    
+	    </LinearLayout>
+	</LinearLayout>
+    
+
+</LinearLayout>
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wind_popup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EECCCCFF" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:gravity="center_vertical"
+        android:text="Set Wind Direction"
+        android:textSize="16sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/wind_direction_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="0-359 degrees"
+        android:inputType="number"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/TextView02"
+        android:layout_below="@+id/TextView02"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="Facing the field, 0 degrees is to the right " />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="90dp"
+        android:gravity="center_vertical"
+        android:text="Wind Strength"
+        android:textSize="16sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/wind_strength_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginTop="5dp"
+        android:text="From API" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/temperature_value"
+        android:layout_below="@+id/wind_direction_text"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:text="Weather"
+        android:textSize="16sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/weather_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView06"
+        android:layout_below="@+id/TextView06"
+        android:layout_marginTop="5dp"
+        android:text="From API" />
+
+    <Button
+        android:id="@+id/save_wind_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignTop="@+id/weather_value"
+        android:text="Update" />
+
+    <TextView
+        android:id="@+id/temperature_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView04"
+        android:layout_below="@+id/wind_direction_text"
+        android:text="From API" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/wind_direction_text"
+        android:layout_alignBottom="@+id/wind_direction_text"
+        android:layout_alignLeft="@+id/wind_strength_value"
+        android:gravity="center_vertical"
+        android:text="Temperature"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/wind_strength_value"
+        android:gravity="center_vertical"
+        android:text="Wind Strength"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/TextView06"
+        android:layout_below="@+id/TextView03"
+        android:text="From API" />
+
+</RelativeLayout> -->

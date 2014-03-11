@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFCCCCCC"
+    android:orientation="vertical"
+    tools:context=".FieldPage"
+    android:screenOrientation="landscape"  >
+    
+
+    <com.recording.DrawingView
+        android:id="@+id/drawing"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:background="#FFCCCCCC" />
+    
+    <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:orientation="vertical" >
+        
+        <!-- Top Row -->
+		<LinearLayout
+		    android:id="@+id/paint_colors"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+		    
+		    <ImageButton
+			    android:id="@+id/startup_conditions_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    
+			    android:src="@drawable/ic_launcher" />
+			<ImageButton
+			    android:id="@+id/startup_conditions_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    
+			    android:src="@drawable/ic_launcher" />
+			<ImageButton
+			    android:id="@+id/startup_conditions_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    
+			    android:src="@drawable/ic_launcher" />
+			<ImageButton
+			    android:id="@+id/startup_conditions_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    
+			    android:src="@drawable/ic_launcher" />
+			<ImageButton
+			    android:id="@+id/startup_conditions_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    
+			    android:src="@drawable/ic_launcher" />
+			<ImageButton
+			    android:id="@+id/startup_conditions_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    
+			    android:src="@drawable/ic_launcher" />
+
+		</LinearLayout>
+		<!-- Bottom Row -->
+		<LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+			
+		    <ImageButton
+			    android:id="@+id/startup_conditions_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    
+			    android:src="@drawable/ic_launcher" />
+			<ImageButton
+			    android:id="@+id/startup_conditions_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    
+			    android:src="@drawable/ic_launcher" />
+			<ImageButton
+			    android:id="@+id/startup_conditions_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    
+			    android:src="@drawable/ic_launcher" />
+			<ImageButton
+			    android:id="@+id/startup_conditions_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    
+			    android:src="@drawable/ic_launcher" />
+			<ImageButton
+			    android:id="@+id/startup_conditions_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    
+			    android:src="@drawable/ic_launcher" />
+			<ImageButton
+			    android:id="@+id/startup_conditions_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    
+			    android:src="@drawable/ic_launcher" />
+		</LinearLayout>
+	</LinearLayout>
+
+    
+
+</LinearLayout>
